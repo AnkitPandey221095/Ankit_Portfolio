@@ -56,6 +56,26 @@ body {
     color: #0ef;
 }
 
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 15px 5%; /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        font-size: 24px; /* Reduce logo font size */
+        margin-bottom: 15px; /* Add spacing below the logo */
+    }
+
+    .navBar a {
+        font-size: 16px; /* Adjust font size for links */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add spacing between links */
+    }
+}
+
+
 /* -------------------------end of nav bar----------------------------------------- */
 
 
@@ -197,6 +217,52 @@ body {
         0 0 100px cyan, 
         0 0 200px cyan;
 }
+
+
+/* start --------> applying media quary to make web page responsive----------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0; 
+    }
+
+    .home .home_img {
+        position: relative;
+        width: 100vw;
+        margin: 100px auto 30px auto;
+        right:0;
+    }
+
+    .home .home_img img {
+        
+        width: 300px; 
+        height: 300px; 
+        padding: 5px; 
+        margin: 0 30px 0 30px ;
+    }
+
+    .home-content h1{
+        font-size: 40px;
+    }
+
+    .home-content {
+        max-width: 100%; /* Use full width for content */
+        text-align: center; /* Center-align text */
+    }
+
+    .home-content h3 {
+        font-size: 24px; /* Reduce font size */
+    }
+}
+
+
+
+
+
+/* start --------> applying media quary to make web page responsive */
+
 
 
 @keyframes slideRight {
@@ -356,6 +422,51 @@ body {
 .about .btn-box{
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .about {
+        display: flex; /* Change grid to flex for smaller screens */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+        height: auto; /* Allow height to adjust based on content */
+        margin-bottom: 20px; /* Reduce bottom margin */
+        padding: 20px; /* Add some padding for spacing */
+    }
+
+    .about_img img {
+        width: 160px; /* Reduce image size */
+        height: 160px; /* Maintain proportional height */
+        padding: 5px; /* Adjust padding */
+        box-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 30px cyan; /* Simplify shadow for mobile */
+    }
+
+    .about_text h2 {
+        font-size: 36px; /* Reduce heading size */
+        text-align: center; /* Center-align text */
+    }
+
+    .about_text h4 {
+        font-size: 20px; /* Adjust subheading size */
+        text-align: center; /* Center-align text */
+    }
+
+    .about_text p {
+        font-size: 14px; /* Reduce paragraph font size */
+        line-height: 1.6; /* Adjust line spacing */
+        width: 100%; /* Make the paragraph span full width */
+        margin: 10px 0; /* Adjust margin */
+        text-align: justify; /* Keep justified text */
+    }
+
+    .about .btn-box {
+        width: auto; /* Allow button width to adjust naturally */
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 14px; /* Reduce font size */
+        text-align: center; /* Center-align button */
+    }
+}
+
+
 /*--------------------------------------end of about section-------------------------------*/
 
 
@@ -730,6 +841,40 @@ opacity:0;
     
 } 
 
+@media (max-width:768px){
+
+    .sub_title {
+
+        padding: 0;
+    }
+
+    .container1{
+        width:100%;
+        margin: 15px;
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .heading1{
+        font-size: 20px;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .radial_bars .radial_bar {
+        position: relative;
+        width: 25%;
+        height: 100px;
+        margin: 50px;
+    }
+
+    .radial_bars .radial_bar .text {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 20px;
+    }
+}
 
 
 /*--------------------------------------end of My skill section-------------------------------*/
@@ -1007,3 +1152,42 @@ background-color:rgb(7,85, 91);
 width: 100%;
 padding: 10px;
 }
+
+/* starting ------>  media for contact section----------------------------------------------------------------------------- */
+
+@media(max-width:768px){
+    .contact{
+        padding:0;
+        grid-template-columns: repeat(1, 1fr);
+        margin:10px 10px;
+    }
+    .sub_title{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom:25px;
+    }
+
+    .contact_text p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 2rem;
+    }
+
+    .contact_form input, form textarea {
+        width: 100%;
+    }
+
+    .contact_list {
+        margin-bottom: 1rem;
+    }
+
+    .contact .contact_icon{
+        height: 3rem;
+    }
+
+    .contact_form .send {
+        margin: 20px 20px;
+    }
+}
+
+/* ending ------>  media for contact section----------------------------------------------------------------------------- */

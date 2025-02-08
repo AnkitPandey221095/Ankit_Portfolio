@@ -227,6 +227,10 @@ body {
         height: auto;
         padding: 20px 0; 
     }
+    .home-content p{
+        text-align:justify;
+        padding: 10px;
+    }
 
     .home .home_img {
         position: relative;
@@ -844,13 +848,12 @@ opacity:0;
 @media (max-width:768px){
 
     .sub_title {
-
         padding: 0;
     }
 
     .container1{
         width:100%;
-        margin: 15px;
+        margin: 0 15px;
         height: auto;
         padding: 0 10px;
     }
@@ -869,10 +872,12 @@ opacity:0;
     }
 
     .radial_bars .radial_bar .text {
-        width: 100%;
+        width: 150px;
         position: absolute;
         text-align: center;
-        bottom: 20px;
+        bottom:-30%;
+        left:-45%;
+        
     }
 }
 
@@ -984,20 +989,21 @@ margin-bottom:15px ;
 
 
 
-
-
-
-
-
-
-
-
 @keyframes animate{
     100%{
         transform: scaleX(1);
     }
 }
 
+@media (max-width:768px) {
+    .main_text{
+        padding-top: 0;
+    }
+
+    .main_text h2{
+        font-size: 40px;
+    }
+}
 
 
 

@@ -445,8 +445,9 @@ body {
     }
 
     .about_text h2 {
-        font-size: 36px; /* Reduce heading size */
-        text-align: center; /* Center-align text */
+        font-size: 36px;
+        text-align: center;
+        margin-top: 20px;
     }
 
     .about_text h4 {
@@ -998,10 +999,49 @@ margin-bottom:15px ;
 @media (max-width:768px) {
     .main_text{
         padding-top: 0;
+        margin-top:20px ;
     }
 
     .main_text h2{
         font-size: 40px;
+    }
+
+    .main_text h2 {
+        
+        margin-bottom: 0px;
+    }
+
+    .portfolio_content {
+        margin: 50px 20px;
+    }
+
+    .layer{
+        height:0;
+       
+    }
+    .layer:hover{
+        height: auto;
+    }
+
+    .layer p{
+        font-size:10px;
+        color:#fff;
+    }
+
+    .layer h5{
+        margin-bottom: 5px;
+        line-height: 1;
+        color:#fff;
+    }
+
+    .layer i {
+        color: #ff004f;
+        margin-top: 5px;
+        font-size: 15px;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
     }
 }
 

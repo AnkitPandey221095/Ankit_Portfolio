@@ -56,23 +56,44 @@ body {
     color: #0ef;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*  */
+
 @media (max-width: 768px) {
-    .navBar {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to the left */
-        padding: 15px 5%; /* Adjust padding for smaller screens */
+
+    .navBar_pages {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right:0%;
+        background: #05112978;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    .logo {
-        font-size: 24px; /* Reduce logo font size */
-        margin-bottom: 15px; /* Add spacing below the logo */
+    .navBar_pages a{
+        font-size:20px;
+        font-weight: 400;
+        margin: 20px 0;
     }
 
-    .navBar a {
-        font-size: 16px; /* Adjust font size for links */
-        margin-left: 0; /* Remove left margin */
-        margin-bottom: 10px; /* Add spacing between links */
+    .navBar_pages.active {
+        display: flex;
     }
+
+    .hamburger {
+        display: block;
+    }
+    
 }
 
 

@@ -712,17 +712,17 @@ opacity:0;
     
     
     .JavaScript span{
-        width:60%;
-    }
-    
-    
-    .Python span{
         width:70%;
     }
     
     
+    .Python span{
+        width:80%;
+    }
+    
+    
     .React span{
-        width:30%;
+        width:60%;
     }
     
 
@@ -738,17 +738,17 @@ opacity:0;
     
     
     .JavaScript span::after{
-        content: "60%";
-    }
-    
-    
-    .Python span::after{
         content: "70%";
     }
     
     
+    .Python span::after{
+        content: "80%";
+    }
+    
+    
     .React span::after{
-        content: "30%";
+        content: "60%";
     }
 
 
@@ -982,7 +982,8 @@ margin-bottom:15px ;
 .layer p{
     color:#000;
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.2;
+    text-align: justify;
 }
 
 .layer i{

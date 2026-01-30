@@ -26,3 +26,10 @@ document.querySelectorAll('.nav_btn').forEach((btn)=>{
         navPages.classList.toggle('active');
     });
 });
+
+const slider = document.querySelector('.portfolio_content');
+
+  slider.addEventListener('wheel', (evt) => {
+    evt.preventDefault();
+    slider.scrollLeft += evt.deltaY;
+  });

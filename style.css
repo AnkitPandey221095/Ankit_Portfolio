@@ -911,6 +911,8 @@ opacity:0;
 
 .project{
     margin:20px 0;
+    width: 100%;
+    padding:1%;
 }
 
 .main_text{
@@ -930,10 +932,33 @@ opacity:0;
 
 
 .portfolio_content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    grid-gap: 40px;
-    margin: 100px 20px;
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 100px 0 0 0;
+    padding: 0 20px 20px 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.portfolio_content::-webkit-scrollbar {
+    height: 10px;
+}
+
+.portfolio_content::-webkit-scrollbar-thumb {
+    background: rgba(14, 239, 255, 0.4);
+    border-radius: 10px;
+}
+
+.portfolio_content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.row {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
 }
 
 @keyframes animate{
@@ -954,6 +979,7 @@ opacity:0;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
+    width: 350px;
   }
 
   .row img{
